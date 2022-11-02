@@ -1,0 +1,112 @@
+body{
+    background-color: #2962D6;
+    font-family: Arial; 
+    /* overflow-y: hidden; */
+}
+
+/*temporizador*/
+.conteiner{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+.temp{
+    margin: 25% 0;
+    color: white;
+    font-size: 25em;
+}
+.tempo{
+    animation-name: time;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.aviso{
+    color:red;
+}
+@keyframes time{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*configuração*/
+.conteiner-conf {
+    width: 950px;
+    display: flex;
+    position: relative;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+.info{
+    color: #2962D6;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+/*configurações*/
+.conf-temp > p{
+    margin-left: 50px;
+    font-size: 20px;
+}
+.conf-temp > button[type="submit"]{
+    color: white;
+    border: none;
+    width: 30%;
+    height: 40px;
+    margin-left: 35%;
+    font-size: 20px;
+    background-color: #2962D6;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.conf-temp > input{
+    font-size: 20px;
+    width: 50%;
+    margin-left: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*controles*/
+.configuracao:nth-child(1){
+    border-right: 1px solid #0e2657 ;
+    padding-right: 30px;
+}
+
+/*botões*/
+.butao > button{
+    color: white;
+    border: none;
+    width: 30%;
+    height: 40px;
+    margin-left: 9px;
+    font-size: 20px;
+    background-color: #2962D6;
+    border-radius: 5px;
+}
+.butao > button:hover, .conf-temp > button[type="submit"]:hover{
+    background-color: #1f4eac;
+}
+.select-conf .butao > button{
+    width: 150px;
+    height: 60px;
+    font-size: 30px;
+}
+.selects {
+    background-color:  #0e2657 !important;
+}
+.enviou{
+    background-color: green !important;
+}
+.nao-enviou{
+    background-color: rgb(252, 47, 47) !important;
+}

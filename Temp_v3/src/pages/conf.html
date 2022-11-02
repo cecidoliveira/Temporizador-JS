@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/Temporizador.png" type="image/x-icon">
+    <title>Configuração</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <div class="conteiner-conf">
+        
+        <div class="configuracao">
+
+            <h2 class="info">Temporizador 1 </h2>
+            
+            <div class="butao controles"> 
+                <button id="iniciar" class="tela1">Iniciar (A)</button>
+                <button id="pausar"  class="tela1 selects" disabled>Pausar (S)</button>
+                <button id="zerar"  class="tela1">Zerar (D)</button>
+            </div>
+
+            <form class="conf-temp" id="tela1" onsubmit="return false">
+                <p>Tempo : </p> 
+                <input type="text"  pattern="([0-2][0-9]):[0-5][0-9]" value="02:00" required/>
+               
+                <button type="submit" class ="tela1" id="send">Definir</button>
+            </form>
+                
+        </div>
+
+        <div class="configuracao">
+
+            <h2 class="info">Temporizador 2</h2>
+
+            <div class="butao controles">
+                <button id="iniciar" class="tela2">Iniciar (J)</button>
+                <button id="pausar" class="tela2 selects">Pausar (K)</button>
+                <button id="zerar" class="tela2">Zerar (P)</button>
+            </div>
+
+            <form class="conf-temp" id="tela2" onsubmit="return false">
+                <p>Tempo : </p> 
+                <input type="text" pattern="([0-2][0-9]):[0-5][0-9]" value="02:00" required/>
+               
+                <button type="submit" class ="tela2" id="send">Definir</button>
+            </form>
+                
+        </div>
+        
+       
+
+    </div>
+    
+    <script src="../../conf.js"></script>
+</body>
+</html>
