@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuração</title>
+    <link rel="shortcut icon" href="../img/temp.png" type="image/x-icon">
+    <link rel="stylesheet" href="../syles/styles.css">
+</head>
+<body>
+    <div class="conteiner-conf">
+        <div class="configuracao">
+            <h2 class="info">Configurações:</h2>
+            <form class="conf-temp" onsubmit="getTemp(); return false">
+                <p>Tempo de pergunta : </p> 
+                <input type="text" pattern="([01][0-9]|2[0-3]):[0-5][0-9]" name="defPergunta" value="02:00" required/>
+                <p>Tempo de respota : </p>
+                <input type="text" pattern="([01][0-9]|2[0-3]):[0-5][0-9]" name="defResposta" value="04:00" required/>
+                <p>Tempo de réplica : </p> 
+                <input type="text" pattern="([01][0-9]|2[0-3]):[0-5][0-9]" name="defReplica" value="01:00" required/>
+                <p>Tempo de tréplica : </p>
+                <input type="text" id="espaco" pattern="([01][0-9]|2[0-3]):[0-5][0-9]" name="defTreplica" value="03:00" required/>
+                <button type="submit" name="send" id="send">Definir</button>
+            </form>
+        </div>
+
+        <div class="controles">
+            <h2 class="info">Controles:</h2>
+            <p><span class="info">F11</span> - Tela cheia</p>
+            <p><span class="info">Enter</span> - Inicia o Temporizador</p>
+            <p><span class="info">Espaço</span> - Pausa o Temporizador</p>
+            <p><span class="info">Tecla P</span> - Seleciona tempo de pergunta</p>
+            <p><span class="info">Tecla R</span> - Seleciona tempo de resposta</p>
+            <p><span class="info">Tecla O</span> - Seleciona tempo de réplica</p>
+            <p><span class="info">Tecla T</span> - Seleciona tempo de tréplica</p>
+            <p><span class="info">Tecla Z</span> - Zera o Temporizador</p>
+        </div>
+    
+    </div>
+    <script src="../../conf.js"></script>
+</body>
+</html>
